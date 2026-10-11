@@ -1,4 +1,4 @@
-/* Farm LTF2 – thư viện văn bản, công vụ và cẩm nang vận hành (trang tĩnh trên GitHub Pages, chỉ đọc). */
+﻿/* Farm LTF2 – thư viện văn bản, công vụ và cẩm nang vận hành (trang tĩnh trên GitHub Pages, chỉ đọc). */
 (function () {
   "use strict";
 
@@ -223,9 +223,9 @@
     h += '<h2 class="sec">Trong cẩm nang có gì</h2><div class="card"><ul class="plain">' +
       "<li><b>MENU</b> bấm được: chuyển thẳng tới chương hoặc văn bản liên quan.</li>" +
       "<li><b>Phần A:</b> Farm LTF2, Ban Quản lý Farm, 8 nguyên tắc vận hành, các giai đoạn một vụ nuôi.</li>" +
-      "<li><b>Phần B:</b> 19 công vụ, mỗi công vụ có sơ đồ bước, người làm, văn bản đi kèm.</li>" +
+      "<li><b>Phần B:</b> " + S.cv.length + " công vụ, mỗi công vụ có sơ đồ bước, người làm, văn bản đi kèm.</li>" +
       "<li><b>Phần C:</b> xử lý vụ việc phát sinh (ba mức), bảng tra nhanh, lịch việc hằng ngày, tuần, tháng.</li>" +
-      "<li><b>Phụ lục:</b> 37 văn bản mẫu, mỗi trang có thẻ “▲ Về menu” ở lề trái.</li></ul></div>";
+      "<li><b>Phụ lục:</b> " + S.docs.length + " văn bản mẫu, mỗi trang có thẻ “▲ Về menu” ở lề trái.</li></ul></div>";
     h += '<h2 class="sec">Cách in</h2><div class="note">In khổ A4, tỷ lệ 100% (không chọn “thu nhỏ vừa trang”) để giữ lề 12 mm, riêng lề trái 19 mm. ' +
       "Chấm trong biểu mẫu là chỗ ghi tay.</div>";
     h += '<div class="btns"><button class="btn" id="goLib">Mở thư viện văn bản</button><button class="btn" id="goCv">Mở danh sách công vụ</button></div>';
@@ -390,3 +390,4 @@
 
   init();
 })();
+

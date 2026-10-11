@@ -29,6 +29,11 @@
    "ma": "AN",
    "ten": "An ninh, an toàn",
    "ico": "🛡"
+  },
+  {
+   "ma": "DN",
+   "ten": "Đối ngoại",
+   "ico": "🤝"
   }
  ],
  "cong_vu": [
@@ -98,7 +103,8 @@
     "TC-02"
    ],
    "thuong_dung": [
-    "TC-03"
+    "TC-03",
+    "TC-06"
    ],
    "tham_chieu": [
     "NQ-05",
@@ -248,7 +254,8 @@
    ],
    "thuong_dung": [
     "TC-02",
-    "TC-04"
+    "TC-04",
+    "TC-06"
    ],
    "tham_chieu": [
     "NQ-05"
@@ -303,7 +310,9 @@
     "TC-04"
    ],
    "thuong_dung": [
-    "TC-03"
+    "TC-03",
+    "TC-07",
+    "TC-06"
    ],
    "tham_chieu": [
     "NQ-05",
@@ -491,7 +500,8 @@
    ],
    "tham_chieu": [
     "NQ-02",
-    "NQ-04"
+    "NQ-04",
+    "KH-06"
    ],
    "luu_y": []
   },
@@ -538,7 +548,9 @@
      "ten": "Cấp bảo hộ, hướng dẫn công việc",
      "ai": "Kỹ thuật farm",
      "vb": [
-      "NQ-02"
+      "NQ-02",
+      "NS-08",
+      "NS-09"
      ],
      "ghi": ""
     },
@@ -556,7 +568,9 @@
     "NS-02"
    ],
    "thuong_dung": [
-    "NS-03"
+    "NS-03",
+    "NS-08",
+    "NS-09"
    ],
    "tham_chieu": [
     "NQ-01",
@@ -763,7 +777,8 @@
      "ten": "Đo thông số ao, ghi nhật ký",
      "ai": "Kỹ thuật, Công nhân",
      "vb": [
-      "VH-01"
+      "VH-01",
+      "VH-09"
      ],
      "ghi": ""
     },
@@ -813,7 +828,8 @@
    "thuong_dung": [
     "VH-04",
     "KH-02",
-    "KH-05"
+    "KH-05",
+    "VH-09"
    ],
    "tham_chieu": [
     "NQ-02",
@@ -909,10 +925,19 @@
    "ai": "Kỹ thuật farm, Trưởng farm, Phó farm",
    "buoc": [
     {
+     "ten": "Phân công công việc cho tuần mới",
+     "ai": "Trưởng farm",
+     "vb": [
+      "NS-07"
+     ],
+     "ghi": ""
+    },
+    {
      "ten": "Lấy mẫu 10–30 con mỗi ao, cân đo, quan sát lột xác",
      "ai": "Kỹ thuật farm",
      "vb": [
-      "VH-06"
+      "VH-06",
+      "VH-08"
      ],
      "ghi": ""
     },
@@ -950,7 +975,10 @@
    ],
    "thuong_dung": [
     "DA-02",
-    "TC-04"
+    "TC-04",
+    "VH-08",
+    "VH-09",
+    "NS-07"
    ],
    "tham_chieu": [
     "NQ-06"
@@ -1026,7 +1054,9 @@
     "VH-04",
     "VH-01",
     "KH-02",
-    "DA-01"
+    "DA-01",
+    "VH-08",
+    "VH-09"
    ],
    "tham_chieu": [
     "NQ-06",
@@ -1042,6 +1072,14 @@
    "khi_nao": "Cuối vụ nuôi",
    "ai": "Kỹ thuật farm, Người mua, Kế toán farm, Trưởng farm",
    "buoc": [
+    {
+     "ten": "Lập kế hoạch thu hoạch theo đợt, chuẩn bị dụng cụ, nhân công",
+     "ai": "Kỹ thuật farm, Trưởng farm",
+     "vb": [
+      "VH-10"
+     ],
+     "ghi": "Lập trước đợt thu 7–10 ngày"
+    },
     {
      "ten": "Thống nhất kế hoạch thu và người mua",
      "ai": "Trưởng farm, Ban Kinh doanh",
@@ -1087,7 +1125,10 @@
    "thuong_dung": [
     "TC-02",
     "TC-04",
-    "TC-05"
+    "TC-05",
+    "VH-10",
+    "TC-06",
+    "TC-07"
    ],
    "tham_chieu": [
     "NQ-05"
@@ -1151,7 +1192,9 @@
     "KH-02",
     "KH-03"
    ],
-   "thuong_dung": [],
+   "thuong_dung": [
+    "KH-07"
+   ],
    "tham_chieu": [
     "NQ-04"
    ],
@@ -1273,7 +1316,346 @@
    ],
    "tham_chieu": [
     "NQ-02",
+    "NQ-03",
+    "AN-04"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-20",
+   "cat": "KH",
+   "ten": "Sửa chữa, thay thế, thanh lý thiết bị và vật tư",
+   "mo_ta": "Từ lúc phát hiện hỏng đến khi sửa xong hoặc thanh lý, cập nhật sổ bảo trì và thẻ kho.",
+   "khi_nao": "Khi thiết bị, vật tư hỏng, hết hạn hoặc mất giá trị sử dụng",
+   "ai": "Người phát hiện, Kỹ thuật farm, Thủ kho, Phó farm, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Phát hiện hỏng, báo ngay và dừng thiết bị nếu nguy hiểm",
+     "ai": "Người phát hiện",
+     "vb": [
+      "VH-01"
+     ],
+     "ghi": "Ghi vào nhật ký ao nếu ảnh hưởng ao"
+    },
+    {
+     "ten": "Lập phiếu đề nghị sửa chữa",
+     "ai": "Người đề nghị",
+     "vb": [
+      "KH-06"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Chọn phương án",
+     "ai": "Kỹ thuật farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Sửa được và còn kinh tế?",
+      "co": "Tự sửa hoặc thuê đơn vị sửa; chi phí theo CV-01",
+      "khong": "Thay mới (CV-02) hoặc thanh lý vật tư, thiết bị"
+     }
+    },
+    {
+     "ten": "Duyệt phương án; lấy ý kiến kỹ thuật",
+     "ai": "Phó farm, Trưởng farm, Ban Quản lý chất lượng",
+     "vb": [
+      "KH-06"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Sửa xong: ghi sổ theo dõi, bảo trì",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "KH-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Thanh lý hoặc hủy: lập biên bản, ghi giảm thẻ kho",
+     "ai": "Thủ kho, Kế toán",
+     "vb": [
+      "KH-07",
+      "KH-03"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "KH-06"
+   ],
+   "thuong_dung": [
+    "KH-05",
+    "KH-07",
+    "TC-01"
+   ],
+   "tham_chieu": [
+    "NQ-04",
+    "NQ-05"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-21",
+   "cat": "NS",
+   "ten": "Huấn luyện an toàn và cấp phát bảo hộ lao động",
+   "mo_ta": "Huấn luyện người mới, nhắc lại định kỳ; cấp phát và theo dõi đồ bảo hộ.",
+   "khi_nao": "Khi có người mới vào làm và định kỳ",
+   "ai": "Trưởng farm, Kỹ thuật farm, Thủ kho, Người lao động",
+   "buoc": [
+    {
+     "ten": "Lên kế hoạch và nội dung huấn luyện",
+     "ai": "Trưởng farm",
+     "vb": [
+      "NQ-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Huấn luyện, kiểm tra kết quả, người dự ký tên",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "NS-08"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lấy ý kiến về kỹ thuật, an toàn",
+     "ai": "Ban Quản lý chất lượng",
+     "vb": [
+      "NS-08"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Cấp phát bảo hộ theo vị trí, ký nhận",
+     "ai": "Thủ kho",
+     "vb": [
+      "NS-09",
+      "KH-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Theo dõi hạn thay, cấp lại khi hết hạn",
+     "ai": "Thủ kho",
+     "vb": [
+      "NS-09"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "NS-08",
+    "NS-09"
+   ],
+   "thuong_dung": [
+    "NQ-02",
+    "KH-02"
+   ],
+   "tham_chieu": [
+    "NQ-01"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-22",
+   "cat": "AN",
+   "ten": "Kiểm tra PCCC hằng tháng và diễn tập sự cố",
+   "mo_ta": "Kiểm tra định kỳ phòng cháy chữa cháy; diễn tập sáu tháng một lần.",
+   "khi_nao": "Cuối mỗi tháng; diễn tập 6 tháng một lần",
+   "ai": "Người kiểm tra, Trưởng farm, Phó farm",
+   "buoc": [
+    {
+     "ten": "Kiểm tra theo danh mục: bình chữa cháy, tủ điện, kho, lối thoát",
+     "ai": "Người kiểm tra",
+     "vb": [
+      "AN-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Có hạng mục lệch?",
+     "ai": "Người kiểm tra",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Có hạng mục lệch hoặc quá hạn?",
+      "co": "Ghi biện pháp, hạn khắc phục, người chịu trách nhiệm; kiểm lại",
+      "khong": "Ký xác nhận"
+     }
+    },
+    {
+     "ten": "Trưởng farm và Phó farm ký, lưu hồ sơ",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "AN-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Diễn tập theo tình huống đã chọn",
+     "ai": "Trưởng farm",
+     "vb": [
+      "AN-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Đánh giá, khắc phục tồn tại, cập nhật quy chế nếu cần",
+     "ai": "Trưởng farm, Ban Quản lý chất lượng",
+     "vb": [
+      "AN-04",
+      "NQ-02"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "AN-03"
+   ],
+   "thuong_dung": [
+    "AN-04"
+   ],
+   "tham_chieu": [
+    "NQ-02",
     "NQ-03"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-23",
+   "cat": "TC",
+   "ten": "Thanh lý và quyết toán vụ nuôi",
+   "mo_ta": "Chốt số liệu sản lượng, doanh thu, chi phí và công nợ với hai bên góp vốn.",
+   "khi_nao": "Sau khi thu hoạch và bán xong",
+   "ai": "Kế toán farm, Trưởng farm, Phó farm, hai bên góp vốn",
+   "buoc": [
+    {
+     "ten": "Tổng hợp sản lượng, doanh thu từ các đợt thu",
+     "ai": "Kế toán farm",
+     "vb": [
+      "VH-07"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Tổng hợp chi phí thực tế theo 17 hạng mục",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lập biên bản thanh lý, quyết toán",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-07"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Hai bên thống nhất số liệu?",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Hai bên thống nhất số liệu?",
+      "co": "Ký biên bản; thực hiện chia theo thỏa thuận",
+      "khong": "Ghi nội dung chưa thống nhất, họp giải quyết (DA-01)"
+     }
+    },
+    {
+     "ten": "Đối soát vốn góp, trả vốn, chia lợi nhuận",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "TC-05",
+      "TC-06"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lưu hồ sơ vụ nuôi",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "TC-07"
+   ],
+   "thuong_dung": [
+    "TC-04",
+    "TC-05",
+    "TC-06",
+    "VH-07"
+   ],
+   "tham_chieu": [
+    "NQ-05"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-24",
+   "cat": "DN",
+   "ten": "Làm việc với bên thứ ba và xác nhận giao nhận hàng",
+   "mo_ta": "Làm việc với nhà cung cấp, người mua, đơn vị thi công, cơ quan chức năng; ghi nhận thỏa thuận và giao nhận.",
+   "khi_nao": "Khi làm việc hoặc giao nhận với bên ngoài",
+   "ai": "Trưởng farm, Phó farm, Thủ kho, Bên thứ ba",
+   "buoc": [
+    {
+     "ten": "Chuẩn bị nội dung, thành phần làm việc",
+     "ai": "Trưởng farm",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Lập biên bản làm việc, ghi thỏa thuận và việc giao",
+     "ai": "Người ghi biên bản",
+     "vb": [
+      "DN-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lấy ý kiến khi liên quan kỹ thuật hoặc vật tư, tiêu thụ",
+     "ai": "Ban Quản lý chất lượng, Ban Kinh doanh",
+     "vb": [
+      "DN-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Giao nhận hàng: kiểm đếm, ký xác nhận",
+     "ai": "Thủ kho",
+     "vb": [
+      "DN-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Nhập kho theo phiếu; thanh toán theo công vụ CV-01",
+     "ai": "Thủ kho, Kế toán",
+     "vb": [
+      "KH-01",
+      "TC-01"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "DN-01",
+    "DN-02"
+   ],
+   "thuong_dung": [
+    "KH-01",
+    "TC-01"
+   ],
+   "tham_chieu": [
+    "NQ-03",
+    "NQ-04"
    ],
    "luu_y": []
   }
@@ -1459,6 +1841,110 @@
    "van_ban": [
     "TC-05",
     "DA-01"
+   ]
+  },
+  {
+   "vu_viec": "Thiết bị hỏng cần sửa hoặc thay",
+   "muc": "1–2",
+   "cong_vu": [
+    "CV-20"
+   ],
+   "van_ban": [
+    "KH-06",
+    "KH-05",
+    "TC-01"
+   ]
+  },
+  {
+   "vu_viec": "Vật tư hết hạn, hư hỏng cần thanh lý",
+   "muc": "1",
+   "cong_vu": [
+    "CV-20",
+    "CV-17"
+   ],
+   "van_ban": [
+    "KH-07",
+    "KH-03"
+   ]
+  },
+  {
+   "vu_viec": "Chuẩn bị thu hoạch đợt mới",
+   "muc": "1",
+   "cong_vu": [
+    "CV-16"
+   ],
+   "van_ban": [
+    "VH-10",
+    "VH-07"
+   ]
+  },
+  {
+   "vu_viec": "Kiểm tra chất lượng nước, thông số lệch",
+   "muc": "1–2",
+   "cong_vu": [
+    "CV-12",
+    "CV-15"
+   ],
+   "van_ban": [
+    "VH-09",
+    "VH-01",
+    "VH-08"
+   ]
+  },
+  {
+   "vu_viec": "Nhận hàng từ nhà cung cấp, người giao",
+   "muc": "1",
+   "cong_vu": [
+    "CV-24",
+    "CV-17"
+   ],
+   "van_ban": [
+    "DN-02",
+    "KH-01"
+   ]
+  },
+  {
+   "vu_viec": "Làm việc với đối tác, cơ quan chức năng",
+   "muc": "1–3",
+   "cong_vu": [
+    "CV-24"
+   ],
+   "van_ban": [
+    "DN-01"
+   ]
+  },
+  {
+   "vu_viec": "Huấn luyện an toàn, cấp phát đồ bảo hộ",
+   "muc": "1",
+   "cong_vu": [
+    "CV-21"
+   ],
+   "van_ban": [
+    "NS-08",
+    "NS-09"
+   ]
+  },
+  {
+   "vu_viec": "Kiểm tra PCCC, diễn tập sự cố",
+   "muc": "1",
+   "cong_vu": [
+    "CV-22"
+   ],
+   "van_ban": [
+    "AN-03",
+    "AN-04"
+   ]
+  },
+  {
+   "vu_viec": "Quyết toán, thanh lý vụ nuôi",
+   "muc": "2",
+   "cong_vu": [
+    "CV-23",
+    "CV-04"
+   ],
+   "van_ban": [
+    "TC-07",
+    "TC-05"
    ]
   }
  ]

@@ -34,6 +34,11 @@
    "ma": "AN",
    "ten": "An ninh",
    "thu_muc": "07-An-ninh"
+  },
+  {
+   "ma": "DN",
+   "ten": "Đối ngoại",
+   "thu_muc": "08-Doi-ngoai"
   }
  ],
  "van_ban": [
@@ -52,7 +57,8 @@
     "CV-08",
     "CV-10",
     "CV-11",
-    "CV-18"
+    "CV-18",
+    "CV-21"
    ]
   },
   {
@@ -70,7 +76,9 @@
     "CV-07",
     "CV-08",
     "CV-12",
-    "CV-19"
+    "CV-19",
+    "CV-21",
+    "CV-22"
    ]
   },
   {
@@ -87,7 +95,9 @@
    "cong_vu": [
     "CV-05",
     "CV-18",
-    "CV-19"
+    "CV-19",
+    "CV-22",
+    "CV-24"
    ]
   },
   {
@@ -106,7 +116,9 @@
     "CV-07",
     "CV-12",
     "CV-13",
-    "CV-17"
+    "CV-17",
+    "CV-20",
+    "CV-24"
    ]
   },
   {
@@ -126,7 +138,9 @@
     "CV-03",
     "CV-04",
     "CV-06",
-    "CV-16"
+    "CV-16",
+    "CV-20",
+    "CV-23"
    ]
   },
   {
@@ -275,7 +289,8 @@
     "CV-12",
     "CV-13",
     "CV-14",
-    "CV-15"
+    "CV-15",
+    "CV-20"
    ]
   },
   {
@@ -369,7 +384,8 @@
    "thu_muc": "03-Van-hanh-nuoi",
    "file": "docs/03-Van-hanh-nuoi/LTF2-VH-07 Bien ban thu hoach phieu can.pdf",
    "cong_vu": [
-    "CV-16"
+    "CV-16",
+    "CV-23"
    ]
   },
   {
@@ -386,7 +402,8 @@
    "cong_vu": [
     "CV-02",
     "CV-13",
-    "CV-17"
+    "CV-17",
+    "CV-24"
    ]
   },
   {
@@ -404,7 +421,8 @@
     "CV-12",
     "CV-15",
     "CV-17",
-    "CV-18"
+    "CV-18",
+    "CV-21"
    ]
   },
   {
@@ -420,7 +438,8 @@
    "file": "docs/04-Kho-thiet-bi/LTF2-KH-03 The kho va bien ban kiem ke.pdf",
    "cong_vu": [
     "CV-02",
-    "CV-17"
+    "CV-17",
+    "CV-20"
    ]
   },
   {
@@ -452,7 +471,8 @@
    "file": "docs/04-Kho-thiet-bi/LTF2-KH-05 So theo doi bao tri may moc.pdf",
    "cong_vu": [
     "CV-07",
-    "CV-12"
+    "CV-12",
+    "CV-20"
    ]
   },
   {
@@ -472,7 +492,9 @@
     "CV-06",
     "CV-07",
     "CV-09",
-    "CV-13"
+    "CV-13",
+    "CV-20",
+    "CV-24"
    ]
   },
   {
@@ -527,7 +549,8 @@
     "CV-03",
     "CV-04",
     "CV-14",
-    "CV-16"
+    "CV-16",
+    "CV-23"
    ]
   },
   {
@@ -543,7 +566,8 @@
    "file": "docs/05-Tai-chinh/LTF2-TC-05 Bien ban doi soat gop von.pdf",
    "cong_vu": [
     "CV-03",
-    "CV-16"
+    "CV-16",
+    "CV-23"
    ]
   },
   {
@@ -653,11 +677,235 @@
    "cong_vu": [
     "CV-19"
    ]
+  },
+  {
+   "ma": "TC-06",
+   "ten": "Giấy biên nhận tiền",
+   "nhom": "TC",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Mỗi lần giao nhận tiền",
+   "dung_khi": "Giao hoặc nhận tiền mặt; kèm phiếu thu, chi",
+   "ky": "Người giao; Người nhận; Kế toán; Trưởng farm",
+   "thu_muc": "05-Tai-chinh",
+   "file": "docs/05-Tai-chinh/LTF2-TC-06 Giay bien nhan tien.pdf",
+   "cong_vu": [
+    "CV-01",
+    "CV-03",
+    "CV-04",
+    "CV-16",
+    "CV-23"
+   ]
+  },
+  {
+   "ma": "TC-07",
+   "ten": "Biên bản thanh lý, quyết toán vụ nuôi",
+   "nhom": "TC",
+   "kho": "Ngang",
+   "trang": 2,
+   "tan_suat": "Cuối vụ",
+   "dung_khi": "Quyết toán doanh thu, chi phí, công nợ trước khi chia lợi nhuận",
+   "ky": "Bên A; Bên B; Kế toán",
+   "thu_muc": "05-Tai-chinh",
+   "file": "docs/05-Tai-chinh/LTF2-TC-07 Bien ban quyet toan vu nuoi.pdf",
+   "cong_vu": [
+    "CV-04",
+    "CV-16",
+    "CV-23"
+   ]
+  },
+  {
+   "ma": "NS-07",
+   "ten": "Bảng phân công công việc tuần",
+   "nhom": "NS",
+   "kho": "Ngang",
+   "trang": 1,
+   "tan_suat": "Hằng tuần",
+   "dung_khi": "Phân công người, khu vực, công việc cho tuần mới",
+   "ky": "Người lập; Phó farm; Trưởng farm",
+   "thu_muc": "02-Nhan-su",
+   "file": "docs/02-Nhan-su/LTF2-NS-07 Bang phan cong tuan.pdf",
+   "cong_vu": [
+    "CV-14"
+   ]
+  },
+  {
+   "ma": "NS-08",
+   "ten": "Biên bản huấn luyện an toàn lao động",
+   "nhom": "NS",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Khi tuyển / định kỳ",
+   "dung_khi": "Huấn luyện người mới hoặc nhắc lại định kỳ",
+   "ky": "Người huấn luyện; Phó farm; Trưởng farm",
+   "thu_muc": "02-Nhan-su",
+   "file": "docs/02-Nhan-su/LTF2-NS-08 Bien ban huan luyen an toan.pdf",
+   "cong_vu": [
+    "CV-08",
+    "CV-21"
+   ]
+  },
+  {
+   "ma": "NS-09",
+   "ten": "Giấy cấp phát bảo hộ lao động",
+   "nhom": "NS",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Khi cấp phát",
+   "dung_khi": "Cấp găng, ủng, khẩu trang, áo phao…",
+   "ky": "Người nhận; Thủ kho; Trưởng farm",
+   "thu_muc": "02-Nhan-su",
+   "file": "docs/02-Nhan-su/LTF2-NS-09 Giay cap phat bao ho.pdf",
+   "cong_vu": [
+    "CV-08",
+    "CV-21"
+   ]
+  },
+  {
+   "ma": "VH-08",
+   "ten": "Phiếu theo dõi sức khỏe và lột xác theo ao",
+   "nhom": "VH",
+   "kho": "Ngang",
+   "trang": 1,
+   "tan_suat": "Hằng tuần",
+   "dung_khi": "Theo dõi xu hướng sức khỏe, lột xác, hao hụt từng ao",
+   "ky": "Người ghi; Kỹ thuật; Trưởng farm",
+   "thu_muc": "03-Van-hanh-nuoi",
+   "file": "docs/03-Van-hanh-nuoi/LTF2-VH-08 Phieu theo doi suc khoe.pdf",
+   "cong_vu": [
+    "CV-14",
+    "CV-15"
+   ]
+  },
+  {
+   "ma": "VH-09",
+   "ten": "Biên bản kiểm tra chất lượng nước",
+   "nhom": "VH",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Định kỳ / khi lệch",
+   "dung_khi": "Đo chỉ tiêu nước và đối chiếu ngưỡng",
+   "ky": "Người lấy mẫu; Kỹ thuật; Trưởng farm",
+   "thu_muc": "03-Van-hanh-nuoi",
+   "file": "docs/03-Van-hanh-nuoi/LTF2-VH-09 Bien ban kiem tra chat luong nuoc.pdf",
+   "cong_vu": [
+    "CV-12",
+    "CV-14",
+    "CV-15"
+   ]
+  },
+  {
+   "ma": "VH-10",
+   "ten": "Kế hoạch thu hoạch theo đợt",
+   "nhom": "VH",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Mỗi đợt thu",
+   "dung_khi": "Lập trước đợt thu 7–10 ngày",
+   "ky": "Kỹ thuật; Phó farm; Trưởng farm",
+   "thu_muc": "03-Van-hanh-nuoi",
+   "file": "docs/03-Van-hanh-nuoi/LTF2-VH-10 Ke hoach thu hoach theo dot.pdf",
+   "cong_vu": [
+    "CV-16"
+   ]
+  },
+  {
+   "ma": "KH-06",
+   "ten": "Phiếu đề nghị sửa chữa thiết bị",
+   "nhom": "KH",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Khi thiết bị hỏng",
+   "dung_khi": "Đề nghị sửa, thay, thanh lý thiết bị",
+   "ky": "Người đề nghị; Kỹ thuật; Phó farm; Trưởng farm",
+   "thu_muc": "04-Kho-thiet-bi",
+   "file": "docs/04-Kho-thiet-bi/LTF2-KH-06 Phieu de nghi sua chua thiet bi.pdf",
+   "cong_vu": [
+    "CV-07",
+    "CV-20"
+   ]
+  },
+  {
+   "ma": "KH-07",
+   "ten": "Biên bản thanh lý, hư hỏng vật tư",
+   "nhom": "KH",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Khi cần",
+   "dung_khi": "Vật tư hư hỏng, hết hạn, mất giá trị sử dụng",
+   "ky": "Thủ kho; Kế toán; Phó farm; Trưởng farm",
+   "thu_muc": "04-Kho-thiet-bi",
+   "file": "docs/04-Kho-thiet-bi/LTF2-KH-07 Bien ban thanh ly hu hong vat tu.pdf",
+   "cong_vu": [
+    "CV-17",
+    "CV-20"
+   ]
+  },
+  {
+   "ma": "AN-03",
+   "ten": "Phiếu kiểm tra PCCC hằng tháng",
+   "nhom": "AN",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Hằng tháng",
+   "dung_khi": "Kiểm tra bình chữa cháy, tủ điện, kho, lối thoát",
+   "ky": "Người kiểm tra; Phó farm; Trưởng farm",
+   "thu_muc": "07-An-ninh",
+   "file": "docs/07-An-ninh/LTF2-AN-03 Phieu kiem tra PCCC.pdf",
+   "cong_vu": [
+    "CV-22"
+   ]
+  },
+  {
+   "ma": "AN-04",
+   "ten": "Biên bản diễn tập sự cố",
+   "nhom": "AN",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "6 tháng một lần",
+   "dung_khi": "Diễn tập cháy, tai nạn, xâm nhập, dịch bệnh",
+   "ky": "Người chỉ huy; Phó farm; Trưởng farm",
+   "thu_muc": "07-An-ninh",
+   "file": "docs/07-An-ninh/LTF2-AN-04 Bien ban dien tap su co.pdf",
+   "cong_vu": [
+    "CV-19",
+    "CV-22"
+   ]
+  },
+  {
+   "ma": "DN-01",
+   "ten": "Biên bản làm việc với bên thứ ba",
+   "nhom": "DN",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Mỗi buổi làm việc",
+   "dung_khi": "Làm việc với nhà cung cấp, người mua, đơn vị thi công, cơ quan",
+   "ky": "Đại diện bên thứ ba; Phó farm; Trưởng farm",
+   "thu_muc": "08-Doi-ngoai",
+   "file": "docs/08-Doi-ngoai/LTF2-DN-01 Bien ban lam viec ben thu ba.pdf",
+   "cong_vu": [
+    "CV-24"
+   ]
+  },
+  {
+   "ma": "DN-02",
+   "ten": "Thư xác nhận giao nhận hàng",
+   "nhom": "DN",
+   "kho": "Dọc",
+   "trang": 1,
+   "tan_suat": "Mỗi lần giao nhận",
+   "dung_khi": "Xác nhận số lượng, tình trạng hàng thực nhận",
+   "ky": "Bên giao; Bên nhận; Thủ kho",
+   "thu_muc": "08-Doi-ngoai",
+   "file": "docs/08-Doi-ngoai/LTF2-DN-02 Thu xac nhan giao nhan hang.pdf",
+   "cong_vu": [
+    "CV-24"
+   ]
   }
  ],
  "cam_nang": {
   "ten": "Cẩm nang vận hành Farm LTF2",
-  "mo_ta": "Menu bấm được: 19 công vụ có sơ đồ, xử lý vụ việc, lịch việc định kỳ và toàn bộ 37 văn bản mẫu (PDF).",
+  "mo_ta": "Menu bấm được: 24 công vụ có sơ đồ, xử lý vụ việc, lịch việc định kỳ và toàn bộ 51 văn bản mẫu (PDF).",
   "file": "docs/00-Cam-nang/LTF2-CAM-NANG-VAN-HANH.pdf"
  }
 }

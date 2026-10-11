@@ -1,12 +1,12 @@
-# Farm LTF2 – Thư viện văn bản và công vụ (GitHub Pages)
+﻿# Farm LTF2 – Thư viện văn bản và công vụ (GitHub Pages)
 
 Trang web tĩnh cho điện thoại, chỉ để **tra cứu và in**; không ghi lại việc, không lưu dữ liệu người dùng.
 
 | Mục | Dùng để |
 |---|---|
-| **Thư viện** | Cây thư mục 37 văn bản mẫu (7 nhóm); lọc theo tần suất; xem, in, tải PDF. Thẻ cẩm nang ở đầu |
-| **Công vụ** | 19 công vụ có sơ đồ giải quyết từng bước, người làm, điểm quyết định, văn bản bắt buộc/thường dùng/tham chiếu. Có "Tra nhanh: gặp vụ việc gì thì làm gì" |
-| **Cẩm nang** | PDF 74 trang có menu bấm được, đã gồm toàn bộ văn bản mẫu |
+| **Thư viện** | Cây thư mục 51 văn bản mẫu (8 nhóm); lọc theo tần suất; xem, in, tải PDF. Thẻ cẩm nang ở đầu |
+| **Công vụ** | 24 công vụ có sơ đồ giải quyết từng bước, người làm, điểm quyết định, văn bản bắt buộc/thường dùng/tham chiếu. Có "Tra nhanh: gặp vụ việc gì thì làm gì" |
+| **Cẩm nang** | PDF 95 trang có menu bấm được, đã gồm toàn bộ văn bản mẫu |
 
 Văn bản là PDF nên không chỉnh sửa trực tiếp được. Không có hợp đồng thật, số căn cước, số tài khoản, số tiền, tỷ lệ đền bù, mã số doanh nghiệp.
 
@@ -35,3 +35,4 @@ Mở http://127.0.0.1:8765/ (không mở trực tiếp file `index.html`).
 ## Ghi chú
 - Xem PDF dùng pdf.js tải từ cdnjs (cần mạng lần đầu; sau đó lưu đệm). Menu trong cẩm nang bấm được cả trong ứng dụng lẫn khi mở bằng trình đọc PDF.
 - Trang đặt `noindex` để công cụ tìm kiếm không lập chỉ mục; đó không phải bảo mật.
+
