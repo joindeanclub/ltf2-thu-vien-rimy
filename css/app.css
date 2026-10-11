@@ -192,3 +192,45 @@ body.noscroll{overflow:hidden}
 ul.plain{margin:0;padding-left:18px}
 ul.plain li{margin:4px 0}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag.lvl{background:#4a3818;color:#ffe0a8}}
+
+/* v6: thanh trên gọn, nút nổi, tab dưới dạng nút */
+.top{gap:8px;padding:5px 12px;padding-top:calc(5px + env(safe-area-inset-top));min-height:46px;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.top .logo{width:30px;height:30px;border-radius:8px;padding:2px}
+.top .ttl{flex-direction:row;align-items:baseline;gap:8px;line-height:1.2}
+.top .ttl strong{font-size:15px;white-space:nowrap}
+.top .ttl span{font-size:12px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.icon-btn{width:34px;height:34px;font-size:17px;border-radius:9px}
+.back-btn{border:0;background:rgba(255,255,255,.22);color:#fff;border-radius:10px;height:36px;padding:0 12px 0 6px;
+  display:inline-flex;align-items:center;gap:4px;font-weight:700;flex:0 0 auto;box-shadow:0 1px 0 rgba(255,255,255,.25) inset}
+.back-btn[hidden]{display:none}
+.back-btn .bi{font-size:30px;line-height:1;margin-top:-4px;font-weight:400}
+.back-btn small{font-size:12px;font-weight:700}
+.back-btn:active{background:rgba(255,255,255,.36)}
+.vclose{display:inline-flex;gap:4px;align-items:center;padding:0 12px 0 8px}
+.vclose small{font-size:12px;font-weight:700}
+.vclose .bi{font-size:16px}
+
+/* nút & liên kết nổi bật */
+.btn{border:1.5px solid var(--teal);background:var(--card);color:var(--teal);font-weight:700;
+  box-shadow:0 2px 0 rgba(14,90,99,.35),0 3px 8px rgba(0,0,0,.10)}
+.btn:active{transform:translateY(1px);box-shadow:0 1px 0 rgba(14,90,99,.35)}
+.btn.pri{background:linear-gradient(180deg,#14727d,var(--teal));color:#fff;border-color:var(--teal);
+  box-shadow:0 3px 0 #083a41,0 4px 10px rgba(0,0,0,.18)}
+.file,.cvc,.tra-row{transition:background .15s}
+.file:active,.cvc:active{background:var(--soft)}
+.file .pdf{background:#fde7e7}
+.chip{border-width:1.5px;font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.chip.on{box-shadow:0 2px 6px rgba(14,90,99,.4)}
+.tag.doc{border:1.5px solid var(--teal);background:var(--soft);padding:3px 10px;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.fold{background:linear-gradient(180deg,var(--card),var(--soft))}
+.cvc{border-left:4px solid var(--green)}
+
+/* thanh tab dưới: dạng nút, tab hiện hành nổi hẳn lên */
+.tabs{background:var(--bg);border-top:0;gap:8px;padding:0 10px env(safe-area-inset-bottom);
+  grid-template-columns:repeat(3,1fr);box-shadow:0 -4px 14px rgba(0,0,0,.12);align-items:end}
+.tabs button{height:52px;margin:6px 0 8px;border:1.5px solid var(--line);background:var(--card);border-radius:14px;
+  color:var(--mute);font-weight:600;font-size:12.5px;box-shadow:0 2px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.tabs button.on{height:62px;margin:0 0 8px;transform:translateY(-8px);background:var(--teal);border-color:var(--teal);color:#fff;
+  font-weight:700;box-shadow:0 8px 16px rgba(14,90,99,.45),0 0 0 3px var(--bg)}
+.tabs button.on span{font-size:23px}
+:root{--nav-h:76px}

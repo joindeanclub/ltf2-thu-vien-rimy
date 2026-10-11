@@ -13,7 +13,8 @@
 </head>
 <body>
 <header class="top">
-  <img src="icons/icon-192.png" alt="LITECH" class="logo">
+  <button id="btnBack" class="back-btn" hidden aria-label="Quay lại"><span class="bi">‹</span><small>Quay lại</small></button>
+  <img src="icons/icon-192.png" alt="LITECH" class="logo" id="logo">
   <div class="ttl">
     <strong>Farm LTF2</strong>
     <span id="sub">Thư viện văn bản</span>
@@ -36,7 +37,7 @@
 
 <div id="viewer" class="viewer" hidden>
   <div class="vbar">
-    <button id="vClose" class="vbtn" aria-label="Đóng">✕</button>
+    <button id="vClose" class="vbtn vclose" aria-label="Đóng"><span class="bi">✕</span><small>Đóng</small></button>
     <div id="vTitle" class="vtitle"></div>
     <button id="vPrint" class="vbtn" aria-label="In">In</button>
     <a id="vDl" class="vbtn" href="#" download>PDF</a>

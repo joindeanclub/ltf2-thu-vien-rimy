@@ -1,4 +1,4 @@
-﻿/* Farm LTF2 – thư viện văn bản, công vụ và cẩm nang vận hành (trang tĩnh trên GitHub Pages, chỉ đọc). */
+/* Farm LTF2 – thư viện văn bản, công vụ và cẩm nang vận hành (trang tĩnh trên GitHub Pages, chỉ đọc). */
 (function () {
   "use strict";
 
@@ -71,6 +71,7 @@
     $("#view").addEventListener("input", onViewInput);
     $("#sheet").addEventListener("click", onSheetClick);
     $("#vClose").onclick = closeViewer;
+    $("#btnBack").addEventListener("click", function () { S.cvOpen = ""; render(); window.scrollTo(0, 0); });
   }
   function render() {
     document.querySelectorAll(".tabs button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-tab") === S.tab); });
@@ -79,6 +80,9 @@
     else if (S.tab === "congvu") { v.innerHTML = S.cvOpen ? viewCvDetail(S.cvOpen) : viewCongVu(); sub = S.cvOpen ? "Sơ đồ giải quyết công vụ" : "Công vụ và văn bản đi kèm"; }
     else { v.innerHTML = viewCamNang(); sub = "Cẩm nang vận hành"; }
     $("#sub").textContent = sub;
+    var back = S.tab === "congvu" && !!S.cvOpen;
+    $("#btnBack").hidden = !back;
+    $("#logo").style.display = back ? "none" : "";
   }
 
   // ---------- Thư viện ----------
@@ -99,7 +103,6 @@
     TAN.forEach(function (t) { h += chip(t, S.dTan === t, 'data-dt="' + t + '"'); });
     h += "</div>";
     var searching = !!(q || S.dTan || S.dNhom), any = false;
-    if (S.cn && !searching) h += cnCard();
     h += '<div class="tree">';
     S.nhom.forEach(function (n) {
       if (S.dNhom && S.dNhom !== n.ma) return;
@@ -182,8 +185,7 @@
   }
   function viewCvDetail(id) {
     var w = cvBy(id); if (!w) return "";
-    var h = '<button class="back" data-cv-back="1">← Danh sách công vụ</button>';
-    h += '<div class="card"><h2 class="cv-title">' + esc(w.ten) + "</h2><p class='mute'>" + esc(w.mo_ta) + "</p>" +
+    var h = '<div class="card"><h2 class="cv-title">' + esc(w.ten) + "</h2><p class='mute'>" + esc(w.mo_ta) + "</p>" +
       '<dl class="kv"><dt>Khi nào</dt><dd>' + esc(w.khi_nao) + "</dd><dt>Ai tham gia</dt><dd>" + esc(w.ai) + "</dd></dl></div>";
     h += '<h2 class="sec">Sơ đồ giải quyết</h2><ol class="flow">';
     var stepNo = 0;
