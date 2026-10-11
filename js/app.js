@@ -131,10 +131,13 @@
     h += '<p class="note">Văn bản ở dạng PDF để xem, in, lưu; không chỉnh sửa trực tiếp được. Không chứa hợp đồng, số căn cước hay số liệu tài chính.</p>';
     return h;
   }
-  function cnCard() {
-    return '<article class="card cn-card"><span class="cn-ico">📘</span><div><h3>' + esc(S.cn.ten) + "</h3><p>" + esc(S.cn.mo_ta) + "</p>" +
-      '<div class="btns"><button class="btn pri" data-view="CAM-NANG">Xem cẩm nang</button>' +
-      '<a class="btn" style="text-align:center;text-decoration:none" href="' + esc(absUrl(S.cn.file)) + '" target="_blank" rel="noopener">Mở bằng trình đọc PDF</a></div></div></article>';
+  function docCard(ico, ten, moTa, ma, f, ghiChu) {
+    var u = esc(absUrl(f.file));
+    return '<article class="dcard"><div class="dc-head"><span class="dc-ico">' + ico + '</span><div class="dc-txt"><h3>' + esc(ten) + "</h3><p>" + esc(moTa) + "</p>" +
+      (ghiChu ? '<span class="dc-tag">' + esc(ghiChu) + "</span>" : "") + "</div></div>" +
+      '<div class="dc-btns"><button class="dbtn main" data-view="' + ma + '"><b>▶</b>Xem</button>' +
+      '<a class="dbtn" href="' + u + '" target="_blank" rel="noopener"><b>↗</b>Mở PDF</a>' +
+      '<a class="dbtn" href="' + u + '" download><b>⬇</b>Tải về</a></div></article>';
   }
 
   // ---------- Công vụ ----------
@@ -221,19 +224,16 @@
   // ---------- Cẩm nang ----------
   function viewCamNang() {
     if (!S.cn) return '<div class="empty">Chưa có cẩm nang.</div>';
-    var h = cnCard();
+    var h = docCard("📘", "Cẩm nang vận hành Farm LTF2", S.cn.mo_ta, "CAM-NANG", S.cn, "Có menu bấm được");
+    if (S.hd) h += docCard("📱", "Hướng dẫn sử dụng ứng dụng", "Cách mở, tìm văn bản, xem, in, lưu và tra công vụ trên điện thoại (5 trang, có ảnh minh họa).", "HUONG-DAN", S.hd, "5 trang");
     h += '<h2 class="sec">Trong cẩm nang có gì</h2><div class="card"><ul class="plain">' +
       "<li><b>MENU</b> bấm được: chuyển thẳng tới chương hoặc văn bản liên quan.</li>" +
       "<li><b>Phần A:</b> Farm LTF2, Ban Quản lý Farm, 8 nguyên tắc vận hành, các giai đoạn một vụ nuôi.</li>" +
       "<li><b>Phần B:</b> " + S.cv.length + " công vụ, mỗi công vụ có sơ đồ bước, người làm, văn bản đi kèm.</li>" +
       "<li><b>Phần C:</b> xử lý vụ việc phát sinh (ba mức), bảng tra nhanh, lịch việc hằng ngày, tuần, tháng.</li>" +
       "<li><b>Phụ lục:</b> " + S.docs.length + " văn bản mẫu, mỗi trang có thẻ “▲ Về menu” ở lề trái.</li></ul></div>";
-    if (S.hd) h += '<h2 class="sec">Hướng dẫn sử dụng ứng dụng</h2><div class="card"><p class="mute" style="margin:0 0 10px">' + esc(S.hd.ten) + " (5 trang, có ảnh minh họa).</p>" +
-      '<div class="btns"><button class="btn pri" data-view="HUONG-DAN">Xem hướng dẫn</button>' +
-      '<a class="btn" style="text-align:center;text-decoration:none" href="' + esc(absUrl(S.hd.file)) + '" download>Tải PDF</a></div></div>';
-    h += '<h2 class="sec">Cách in</h2><div class="note">In khổ A4, tỷ lệ 100% (không chọn “thu nhỏ vừa trang”) để giữ lề 12 mm, riêng lề trái 19 mm. ' +
-      "Chấm trong biểu mẫu là chỗ ghi tay.</div>";
-    h += '<div class="btns"><button class="btn" id="goLib">Mở thư viện văn bản</button><button class="btn" id="goCv">Mở danh sách công vụ</button></div>';
+    h += '<div class="note"><b>Cách in:</b> khổ A4, tỷ lệ 100% (không chọn “thu nhỏ vừa trang”) để giữ lề 12 mm, riêng lề trái 19 mm. Chấm trong biểu mẫu là chỗ ghi tay.</div>';
+    h += '<div class="btns"><button class="btn" id="goLib">▤ Thư viện văn bản</button><button class="btn" id="goCv">⇄ Danh sách công vụ</button></div>';
     return h;
   }
 
