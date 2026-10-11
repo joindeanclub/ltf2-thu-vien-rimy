@@ -903,6 +903,10 @@
    ]
   }
  ],
+ "huong_dan": {
+  "ten": "Hướng dẫn sử dụng ứng dụng trên điện thoại",
+  "file": "docs/00-Cam-nang/LTF2-HUONG-DAN-SU-DUNG-APP.pdf"
+ },
  "cam_nang": {
   "ten": "Cẩm nang vận hành Farm LTF2",
   "mo_ta": "Menu bấm được: 24 công vụ có sơ đồ, xử lý vụ việc, lịch việc định kỳ và toàn bộ 51 văn bản mẫu (PDF).",

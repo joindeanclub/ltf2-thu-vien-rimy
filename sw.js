@@ -1,5 +1,5 @@
 ﻿/* Service worker: lưu sẵn giao diện và văn bản đã mở để dùng khi mất mạng (dữ liệu việc nằm trong localStorage). */
-var CACHE = "ltf2-v4";
+var CACHE = "ltf2-v5";
 var FILES = ["./", "index.html", "css/app.css", "js/app.js", "data/documents.json", "data/workflows.json",
   "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
 var CDN = ["cdnjs.cloudflare.com"];
@@ -22,5 +22,6 @@ self.addEventListener("fetch", function (e) {
     }).catch(function () { return caches.match(e.request); })
   );
 });
+
 
 

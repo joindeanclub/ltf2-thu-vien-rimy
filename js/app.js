@@ -49,7 +49,7 @@
   function init() {
     S.settings = lsGet(LS_SET, {});
     Promise.all([loadJSON("data/documents.json"), loadJSON("data/workflows.json")]).then(function (r) {
-      S.docs = r[0].van_ban; S.nhom = r[0].nhom; S.cn = r[0].cam_nang || null;
+      S.docs = r[0].van_ban; S.nhom = r[0].nhom; S.cn = r[0].cam_nang || null; S.hd = r[0].huong_dan || null;
       S.cv = r[1].cong_vu; S.cats = r[1].cats; S.tra = r[1].tra_nhanh || [];
       bind(); applyTheme(); render();
       if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
@@ -226,6 +226,9 @@
       "<li><b>Phần B:</b> " + S.cv.length + " công vụ, mỗi công vụ có sơ đồ bước, người làm, văn bản đi kèm.</li>" +
       "<li><b>Phần C:</b> xử lý vụ việc phát sinh (ba mức), bảng tra nhanh, lịch việc hằng ngày, tuần, tháng.</li>" +
       "<li><b>Phụ lục:</b> " + S.docs.length + " văn bản mẫu, mỗi trang có thẻ “▲ Về menu” ở lề trái.</li></ul></div>";
+    if (S.hd) h += '<h2 class="sec">Hướng dẫn sử dụng ứng dụng</h2><div class="card"><p class="mute" style="margin:0 0 10px">' + esc(S.hd.ten) + " (5 trang, có ảnh minh họa).</p>" +
+      '<div class="btns"><button class="btn pri" data-view="HUONG-DAN">Xem hướng dẫn</button>' +
+      '<a class="btn" style="text-align:center;text-decoration:none" href="' + esc(absUrl(S.hd.file)) + '" download>Tải PDF</a></div></div>';
     h += '<h2 class="sec">Cách in</h2><div class="note">In khổ A4, tỷ lệ 100% (không chọn “thu nhỏ vừa trang”) để giữ lề 12 mm, riêng lề trái 19 mm. ' +
       "Chấm trong biểu mẫu là chỗ ghi tay.</div>";
     h += '<div class="btns"><button class="btn" id="goLib">Mở thư viện văn bản</button><button class="btn" id="goCv">Mở danh sách công vụ</button></div>';
@@ -300,7 +303,7 @@
       document.head.appendChild(s);
     });
   }
-  function fileOf(ma) { return ma === "CAM-NANG" ? S.cn : docBy(ma); }
+  function fileOf(ma) { return ma === "CAM-NANG" ? S.cn : ma === "HUONG-DAN" ? S.hd : docBy(ma); }
   var viewerToken = 0;
   function openViewer(ma) {
     var d = fileOf(ma); if (!d || !d.file) return;
