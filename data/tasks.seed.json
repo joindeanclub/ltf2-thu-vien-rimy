@@ -1,0 +1,23 @@
+{
+ "v": 1,
+ "tasks": [
+  {"id":"t-001","tieu_de":"Ký phụ lục sửa Phụ lục 2 (lịch góp vốn mới) với ông Thủy","nhom":"TC","trang_thai":"dang_lam","han":"2026-10-14","uu_tien":1,"nguoi":"Ông Trung","van_ban":["TC-05"],"ghi_chu":"Thay lịch 5 đợt cũ bằng 3 đợt: 15/10/2026, 20/01/2027, 20/06/2027."},
+  {"id":"t-002","tieu_de":"Góp vốn đợt 1 vào quỹ chung (cả hai bên)","nhom":"TC","trang_thai":"can_lam","han":"2026-10-15","uu_tien":1,"nguoi":"Ông Trung","van_ban":["TC-05","TC-02"],"ghi_chu":"Lập biên bản đối soát TC-05 ngay sau khi tiền về quỹ."},
+  {"id":"t-003","tieu_de":"Thanh toán set up và cua giống lần 1 (ngay)","nhom":"TC","trang_thai":"can_lam","han":"2026-10-16","uu_tien":1,"nguoi":"Kế toán farm","van_ban":["TC-01","TC-02","TC-03"],"ghi_chu":"Lần 2 trước 15/11/2026."},
+  {"id":"t-004","tieu_de":"Thanh toán set up và cua giống lần 2","nhom":"TC","trang_thai":"can_lam","han":"2026-11-14","uu_tien":1,"nguoi":"Kế toán farm","van_ban":["TC-01","TC-02"],"ghi_chu":"Giữ hợp đồng và biên nhận ghi rõ ngày giao giống."},
+  {"id":"t-005","tieu_de":"Xác nhận người ký bên giao mặt bằng (ông Tuyên hay ông Thủy có ủy quyền)","nhom":"DA","trang_thai":"can_lam","han":"2026-10-15","uu_tien":2,"nguoi":"Ông Trung","van_ban":["DA-03"],"ghi_chu":""},
+  {"id":"t-006","tieu_de":"Nhận bàn giao mặt bằng, lập biên bản, ghi chỉ số công tơ","nhom":"DA","trang_thai":"can_lam","han":"2026-10-17","uu_tien":2,"nguoi":"Ông Thủy","van_ban":["DA-03"],"ghi_chu":""},
+  {"id":"t-007","tieu_de":"Nghiệm thu hạng mục hạ tầng đợt tháng 10 (dọn ao, ống nước, bơm, sục khí)","nhom":"DA","trang_thai":"can_lam","han":"2026-10-31","uu_tien":2,"nguoi":"Kỹ thuật farm","van_ban":["DA-04","DA-05"],"ghi_chu":"Mỗi hạng mục một biên bản; thiết bị lập thêm DA-05."},
+  {"id":"t-008","tieu_de":"Làm rõ danh mục máy móc, thiết bị còn lại của hạng mục hạ tầng","nhom":"DA","trang_thai":"can_lam","han":"2026-10-20","uu_tien":2,"nguoi":"Ông Trung","van_ban":["DA-02"],"ghi_chu":"Cần danh sách chi tiết để lập dự toán và nghiệm thu."},
+  {"id":"t-009","tieu_de":"Hai bên ký xác nhận bảng tỷ lệ đền bù rủi ro kỹ thuật (NQ-07)","nhom":"NQ","trang_thai":"can_lam","han":"2026-10-20","uu_tien":2,"nguoi":"Ông Trung","van_ban":["NQ-07"],"ghi_chu":"Hợp đồng viện dẫn bảng đính kèm nhưng chưa có phụ lục."},
+  {"id":"t-010","tieu_de":"Điền các số còn trống trong NQ-01, NQ-02, NQ-03, NQ-05, NQ-06","nhom":"NQ","trang_thai":"can_lam","han":"2026-10-20","uu_tien":2,"nguoi":"Ông Thủy","van_ban":["NQ-01","NQ-02","NQ-03","NQ-05","NQ-06"],"ghi_chu":"Giờ làm, số lần tuần tra, ngưỡng tiền mặt, hạn hoàn ứng, ngày giao ban, số bình chữa cháy."},
+  {"id":"t-011","tieu_de":"In và niêm yết nội quy tại cổng, nhà điều hành","nhom":"NQ","trang_thai":"can_lam","han":"2026-10-22","uu_tien":3,"nguoi":"Bảo vệ","van_ban":["NQ-01"],"ghi_chu":""},
+  {"id":"t-012","tieu_de":"Luật sư hoặc kế toán rà hợp đồng lao động, cam kết bảo mật, quy chế kỷ luật","nhom":"NS","trang_thai":"can_lam","han":"2026-10-24","uu_tien":2,"nguoi":"Ông Tùng","van_ban":["NS-01","NS-02","NQ-07"],"ghi_chu":"Chốt pháp nhân ký hợp đồng lao động và đóng bảo hiểm."},
+  {"id":"t-013","tieu_de":"Tuyển, ký hợp đồng lao động và cam kết bảo mật cho người làm","nhom":"NS","trang_thai":"can_lam","han":"2026-10-28","uu_tien":2,"nguoi":"Ông Trung","van_ban":["NS-01","NS-02"],"ghi_chu":""},
+  {"id":"t-014","tieu_de":"Phổ biến an toàn lao động, PCCC cho người mới vào làm","nhom":"NQ","trang_thai":"can_lam","han":"2026-10-30","uu_tien":3,"nguoi":"Kỹ thuật farm","van_ban":["NQ-02"],"ghi_chu":""},
+  {"id":"t-015","tieu_de":"Chuẩn bị nhật ký ao, nhật ký cho ăn, nhật ký thuốc cho 6 ao","nhom":"VH","trang_thai":"can_lam","han":"2026-12-15","uu_tien":3,"nguoi":"Kỹ thuật farm","van_ban":["VH-01","VH-02","VH-04"],"ghi_chu":"In sẵn đủ dùng cho tháng đầu."},
+  {"id":"t-016","tieu_de":"Chuẩn bị thả giống: hợp đồng, kiểm dịch, biên bản thả","nhom":"VH","trang_thai":"can_lam","han":"2027-01-15","uu_tien":2,"nguoi":"Ông Tùng","van_ban":["VH-03","KH-01"],"ghi_chu":""},
+  {"id":"t-017","tieu_de":"Lập thẻ kho, kiểm kê kho đầu kỳ","nhom":"KH","trang_thai":"can_lam","han":"2026-10-30","uu_tien":3,"nguoi":"Thủ kho","van_ban":["KH-03","KH-01","KH-02"],"ghi_chu":""},
+  {"id":"t-018","tieu_de":"Họp giao ban Ban Quản lý Farm tuần đầu","nhom":"DA","trang_thai":"can_lam","han":"2026-10-19","uu_tien":3,"nguoi":"Ông Trung","van_ban":["DA-01"],"ghi_chu":"Mời Ban Quản lý chất lượng và Ban Kinh doanh nếu cần."}
+ ]
+}

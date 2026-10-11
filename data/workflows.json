@@ -1,0 +1,1281 @@
+{
+ "cats": [
+  {
+   "ma": "TC",
+   "ten": "Tài chính, mua sắm",
+   "ico": "💰"
+  },
+  {
+   "ma": "CT",
+   "ten": "Công trình, thiết bị",
+   "ico": "🏗"
+  },
+  {
+   "ma": "NS",
+   "ten": "Nhân sự",
+   "ico": "👥"
+  },
+  {
+   "ma": "VH",
+   "ten": "Vận hành nuôi",
+   "ico": "🦀"
+  },
+  {
+   "ma": "KH",
+   "ten": "Kho, vật tư",
+   "ico": "📦"
+  },
+  {
+   "ma": "AN",
+   "ten": "An ninh, an toàn",
+   "ico": "🛡"
+  }
+ ],
+ "cong_vu": [
+  {
+   "id": "CV-01",
+   "cat": "TC",
+   "ten": "Đề nghị chi và thanh toán một khoản",
+   "mo_ta": "Mọi khoản chi của farm đều đi qua giấy đề nghị chi, duyệt rồi mới chi.",
+   "khi_nao": "Mỗi khi cần chi tiền",
+   "ai": "Người đề nghị, Kế toán farm, Phó farm, Trưởng farm, Thủ quỹ",
+   "buoc": [
+    {
+     "ten": "Lập giấy đề nghị chi kèm chứng từ, báo giá",
+     "ai": "Người đề nghị",
+     "vb": [
+      "TC-01"
+     ],
+     "ghi": "Ghi mã hạng mục dự toán"
+    },
+    {
+     "ten": "Đối chiếu chứng từ và hạn mức hạng mục; lập bảng kê nếu nhiều chứng từ",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-01",
+      "TC-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm tra hạn mức",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Chi vượt hạn mức hạng mục hoặc tổng mức?",
+      "co": "Ghi rõ nguồn bù; Trưởng farm và Phó farm cùng ký; báo hai bên góp vốn",
+      "khong": "Chuyển sang bước duyệt"
+     }
+    },
+    {
+     "ten": "Giám sát và phê duyệt; lấy ý kiến khi liên quan kỹ thuật hoặc vật tư",
+     "ai": "Phó farm, Trưởng farm",
+     "vb": [
+      "TC-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Chi trong 01 ngày làm việc sau khi duyệt; lập phiếu chi",
+     "ai": "Thủ quỹ",
+     "vb": [
+      "TC-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lưu chứng từ, đưa vào báo cáo thu chi",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-04"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "TC-01",
+    "TC-02"
+   ],
+   "thuong_dung": [
+    "TC-03"
+   ],
+   "tham_chieu": [
+    "NQ-05",
+    "TC-04"
+   ],
+   "luu_y": [
+    "Chi không có giấy được duyệt là chi sai quy chế.",
+    "Tiền mặt chỉ áp dụng khoản nhỏ có biên nhận."
+   ]
+  },
+  {
+   "id": "CV-02",
+   "cat": "TC",
+   "ten": "Mua sắm vật tư, thiết bị",
+   "mo_ta": "Từ lúc phát sinh nhu cầu đến khi hàng nhập kho và thanh toán.",
+   "khi_nao": "Khi thiếu vật tư, thức ăn, thuốc hoặc cần thiết bị mới",
+   "ai": "Thủ kho, Kỹ thuật farm, Ban Kinh doanh, Trưởng farm, Kế toán farm",
+   "buoc": [
+    {
+     "ten": "Xác nhận nhu cầu và tồn kho",
+     "ai": "Thủ kho, Kỹ thuật farm",
+     "vb": [
+      "KH-03"
+     ],
+     "ghi": "Xem thẻ kho trước khi đề nghị"
+    },
+    {
+     "ten": "Lập giấy đề nghị mua sắm",
+     "ai": "Người đề nghị",
+     "vb": [
+      "KH-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Tìm nhà cung cấp, báo giá (khi farm đề nghị)",
+     "ai": "Ban Kinh doanh",
+     "vb": [],
+     "ghi": "Quyết định mua do Ban Quản lý Farm"
+    },
+    {
+     "ten": "Phê duyệt đề nghị mua",
+     "ai": "Phó farm, Trưởng farm",
+     "vb": [
+      "KH-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Thanh toán theo quy trình đề nghị chi",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-01",
+      "TC-02"
+     ],
+     "ghi": "Xem công vụ CV-01"
+    },
+    {
+     "ten": "Nhận hàng, kiểm đếm, nhập kho",
+     "ai": "Thủ kho",
+     "vb": [
+      "KH-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Hàng là thiết bị",
+     "ai": "Kỹ thuật farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Hàng là thiết bị cần lắp đặt?",
+      "co": "Lập biên bản nghiệm thu thiết bị (CV-05)",
+      "khong": "Kết thúc"
+     }
+    }
+   ],
+   "bat_buoc": [
+    "KH-04",
+    "TC-01",
+    "KH-01"
+   ],
+   "thuong_dung": [
+    "TC-02",
+    "TC-03",
+    "DA-05"
+   ],
+   "tham_chieu": [
+    "NQ-04",
+    "NQ-05"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-03",
+   "cat": "TC",
+   "ten": "Góp vốn theo đợt và đối soát",
+   "mo_ta": "Theo dõi hạn nộp vốn của hai bên và xác nhận số tiền vào quỹ chung.",
+   "khi_nao": "Trước và sau mỗi đợt góp vốn",
+   "ai": "Kế toán farm, Trưởng farm, Phó farm, hai bên góp vốn",
+   "buoc": [
+    {
+     "ten": "Nhắc hạn nộp theo lịch đã thống nhất",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Hai bên nộp vào quỹ chung",
+     "ai": "Bên A, Bên B",
+     "vb": [
+      "TC-02"
+     ],
+     "ghi": "Lập phiếu thu"
+    },
+    {
+     "ten": "Đối soát số tiền thực nộp với số phải góp",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm tra đủ hạn",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Bên nào còn thiếu hoặc chậm?",
+      "co": "Ghi số thiếu và ngày cam kết nộp bổ sung",
+      "khong": "Xác nhận đủ"
+     }
+    },
+    {
+     "ten": "Hai bên ký xác nhận; cập nhật số dư quỹ vào báo cáo",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "TC-05",
+      "TC-04"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "TC-05"
+   ],
+   "thuong_dung": [
+    "TC-02",
+    "TC-04"
+   ],
+   "tham_chieu": [
+    "NQ-05"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-04",
+   "cat": "TC",
+   "ten": "Báo cáo thu chi và quyết toán quỹ",
+   "mo_ta": "Tổng hợp thu chi theo 17 hạng mục dự toán, đối chiếu quỹ.",
+   "khi_nao": "Hằng tuần hoặc tháng; cuối vụ quyết toán",
+   "ai": "Kế toán farm, Phó farm, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Tổng hợp chứng từ trong kỳ",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lập báo cáo thu chi theo hạng mục",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Đối chiếu sổ ngân hàng, tiền mặt",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Số dư có khớp?",
+      "co": "Chuyển duyệt",
+      "khong": "Giải trình chênh lệch ở mục IV của báo cáo"
+     }
+    },
+    {
+     "ten": "Phó farm, Trưởng farm duyệt; gửi các bên liên quan",
+     "ai": "Phó farm, Trưởng farm",
+     "vb": [
+      "TC-04"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "TC-04"
+   ],
+   "thuong_dung": [
+    "TC-03"
+   ],
+   "tham_chieu": [
+    "NQ-05",
+    "NQ-06"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-05",
+   "cat": "CT",
+   "ten": "Nhận bàn giao mặt bằng",
+   "mo_ta": "Nhận khu đất thuê, ghi hiện trạng làm căn cứ về sau.",
+   "khi_nao": "Khi bắt đầu thuê hoặc khi có thay đổi lớn",
+   "ai": "Trưởng farm, Phó farm, Bên cho thuê",
+   "buoc": [
+    {
+     "ten": "Xác nhận người ký bên giao",
+     "ai": "Trưởng farm",
+     "vb": [],
+     "ghi": "Giám đốc hoặc người có ủy quyền"
+    },
+    {
+     "ten": "Cùng đi kiểm tra ao, bờ bao, điện, nước, nhà",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "DA-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Ghi chỉ số công tơ điện, nước",
+     "ai": "Phó farm",
+     "vb": [
+      "DA-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lập biên bản, ký và đóng dấu",
+     "ai": "Hai bên",
+     "vb": [
+      "DA-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lưu hồ sơ làm căn cứ nghiệm thu, đối chiếu",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "DA-03"
+   ],
+   "thuong_dung": [],
+   "tham_chieu": [
+    "NQ-03"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-06",
+   "cat": "CT",
+   "ten": "Nghiệm thu hạng mục hạ tầng",
+   "mo_ta": "Kiểm tra khối lượng, chất lượng từng hạng mục trước khi thanh toán.",
+   "khi_nao": "Khi đơn vị thi công báo hoàn thành",
+   "ai": "Kỹ thuật farm, Đơn vị thi công, Phó farm, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Đơn vị thi công báo hoàn thành",
+     "ai": "Đơn vị thi công",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm tra khối lượng, chất lượng tại chỗ",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "DA-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm tra kết quả",
+     "ai": "Kỹ thuật farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Còn tồn tại?",
+      "co": "Ghi tồn tại và hạn khắc phục; kiểm lại",
+      "khong": "Chấp nhận nghiệm thu"
+     }
+    },
+    {
+     "ten": "Lấy ý kiến kỹ thuật; ký nghiệm thu",
+     "ai": "Ban Quản lý chất lượng, Phó farm, Trưởng farm",
+     "vb": [
+      "DA-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Thanh toán theo công vụ CV-01",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Cập nhật tiến độ dự án",
+     "ai": "Trưởng farm",
+     "vb": [
+      "DA-02"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "DA-04"
+   ],
+   "thuong_dung": [
+    "TC-01",
+    "DA-02"
+   ],
+   "tham_chieu": [
+    "NQ-05"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-07",
+   "cat": "CT",
+   "ten": "Lắp đặt, nghiệm thu, bàn giao thiết bị",
+   "mo_ta": "Bơm, sục khí, bơm năng lượng mặt trời, kho lạnh…",
+   "khi_nao": "Khi thiết bị về farm",
+   "ai": "Nhà cung cấp, Kỹ thuật farm, Người quản lý thiết bị, Phó farm, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Lắp đặt và chạy thử",
+     "ai": "Nhà cung cấp",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Đo thông số, kiểm tra vận hành",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "DA-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lập biên bản nghiệm thu và bàn giao",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "DA-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Giao người quản lý; mở sổ theo dõi bảo trì",
+     "ai": "Trưởng farm",
+     "vb": [
+      "KH-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Thanh toán",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-01"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "DA-05",
+    "KH-05"
+   ],
+   "thuong_dung": [
+    "TC-01"
+   ],
+   "tham_chieu": [
+    "NQ-02",
+    "NQ-04"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-08",
+   "cat": "NS",
+   "ten": "Tuyển người và ký hợp đồng lao động",
+   "mo_ta": "Từ lúc nhận người vào làm đến khi vào bảng chấm công.",
+   "khi_nao": "Khi tuyển người mới",
+   "ai": "Trưởng farm, Phó farm, Người lao động",
+   "buoc": [
+    {
+     "ten": "Xác định vị trí, công việc, mức lương",
+     "ai": "Trưởng farm",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Phổ biến nội quy và quy chế an toàn",
+     "ai": "Trưởng farm",
+     "vb": [
+      "NQ-01",
+      "NQ-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Ký hợp đồng lao động",
+     "ai": "Người lao động, Đại diện người sử dụng",
+     "vb": [
+      "NS-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Ký cam kết bảo mật (kỹ thuật, kế toán, thủ kho, quản lý)",
+     "ai": "Người lao động",
+     "vb": [
+      "NS-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Cấp bảo hộ, hướng dẫn công việc",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "NQ-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Đưa vào bảng chấm công",
+     "ai": "Kế toán farm",
+     "vb": [
+      "NS-03"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "NS-01",
+    "NS-02"
+   ],
+   "thuong_dung": [
+    "NS-03"
+   ],
+   "tham_chieu": [
+    "NQ-01",
+    "NQ-02",
+    "NQ-07"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-09",
+   "cat": "NS",
+   "ten": "Chấm công và trả lương hằng tháng",
+   "mo_ta": "Chấm công hằng ngày, tổng hợp cuối tháng, trả lương.",
+   "khi_nao": "Hằng ngày và cuối tháng",
+   "ai": "Người chấm công, Kế toán farm, Phó farm, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Chấm công hằng ngày, thu đơn nghỉ",
+     "ai": "Người chấm công",
+     "vb": [
+      "NS-03",
+      "NS-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Tổng hợp công, tính lương, thưởng, khấu trừ",
+     "ai": "Kế toán farm",
+     "vb": [
+      "NS-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Duyệt bảng lương",
+     "ai": "Phó farm, Trưởng farm",
+     "vb": [
+      "NS-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Chi trả lương",
+     "ai": "Thủ quỹ",
+     "vb": [
+      "TC-01",
+      "TC-02"
+     ],
+     "ghi": "Theo công vụ CV-01"
+    }
+   ],
+   "bat_buoc": [
+    "NS-03"
+   ],
+   "thuong_dung": [
+    "NS-04",
+    "TC-01",
+    "TC-02"
+   ],
+   "tham_chieu": [
+    "NQ-07"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-10",
+   "cat": "NS",
+   "ten": "Nghỉ phép, tăng ca và bàn giao việc",
+   "mo_ta": "Xin nghỉ hoặc tăng ca; người thay thế nhận việc.",
+   "khi_nao": "Khi cần nghỉ hoặc làm thêm",
+   "ai": "Người làm đơn, Quản lý trực tiếp, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Nộp đơn trước ít nhất 01 ngày",
+     "ai": "Người làm đơn",
+     "vb": [
+      "NS-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Quản lý trực tiếp xem xét, sắp người thay",
+     "ai": "Quản lý trực tiếp",
+     "vb": [
+      "NS-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Phó farm, Trưởng farm duyệt",
+     "ai": "Phó farm, Trưởng farm",
+     "vb": [
+      "NS-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Bàn giao việc cho người thay",
+     "ai": "Người làm đơn",
+     "vb": [
+      "NS-06"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Ghi vào bảng chấm công",
+     "ai": "Người chấm công",
+     "vb": [
+      "NS-03"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "NS-04"
+   ],
+   "thuong_dung": [
+    "NS-06",
+    "NS-03"
+   ],
+   "tham_chieu": [
+    "NQ-01"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-11",
+   "cat": "NS",
+   "ten": "Xử lý vi phạm nội quy",
+   "mo_ta": "Lập biên bản, giải trình, quyết định hình thức xử lý.",
+   "khi_nao": "Khi phát hiện vi phạm",
+   "ai": "Người phát hiện, Trưởng farm, Phó farm",
+   "buoc": [
+    {
+     "ten": "Lập biên bản tại chỗ, có người chứng kiến",
+     "ai": "Người phát hiện",
+     "vb": [
+      "NS-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Người vi phạm giải trình",
+     "ai": "Người vi phạm",
+     "vb": [
+      "NS-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Xác định mức độ",
+     "ai": "Trưởng farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Vi phạm mức nào?",
+      "co": "Nặng: khấu trừ, chấm dứt hợp đồng theo luật lao động",
+      "khong": "Nhẹ, vừa: nhắc nhở, khiển trách, cảnh cáo"
+     }
+    },
+    {
+     "ten": "Trưởng farm quyết định, Phó farm cùng xem xét",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "NS-05",
+      "NQ-07"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Thông báo bằng văn bản, lưu hồ sơ",
+     "ai": "Kế toán farm",
+     "vb": [],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "NS-05"
+   ],
+   "thuong_dung": [],
+   "tham_chieu": [
+    "NQ-07",
+    "NQ-01"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-12",
+   "cat": "VH",
+   "ten": "Vận hành ao hằng ngày",
+   "mo_ta": "Chuỗi việc lặp lại mỗi ca: giao ca, đo ao, cho ăn, dùng thuốc, báo cáo.",
+   "khi_nao": "Mỗi ngày, mỗi ca",
+   "ai": "Công nhân, Kỹ thuật farm, Thủ kho, Trưởng ca",
+   "buoc": [
+    {
+     "ten": "Giao nhận ca, nghe bàn giao tình trạng",
+     "ai": "Người giao, Người nhận",
+     "vb": [
+      "NS-06"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Đo thông số ao, ghi nhật ký",
+     "ai": "Kỹ thuật, Công nhân",
+     "vb": [
+      "VH-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Xuất thức ăn và cho ăn theo định mức",
+     "ai": "Công nhân, Thủ kho",
+     "vb": [
+      "VH-02",
+      "KH-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Dùng thuốc, men vi sinh (có duyệt liều lượng)",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-04",
+      "KH-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm tra thiết bị, ghi sổ bảo trì khi có việc",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "KH-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Bất thường?",
+     "ai": "Kỹ thuật farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Cua chết, bỏ ăn, thông số lệch?",
+      "co": "Báo Trưởng farm, xử lý theo công vụ CV-15",
+      "khong": "Bàn giao ca"
+     }
+    }
+   ],
+   "bat_buoc": [
+    "VH-01",
+    "VH-02",
+    "NS-06"
+   ],
+   "thuong_dung": [
+    "VH-04",
+    "KH-02",
+    "KH-05"
+   ],
+   "tham_chieu": [
+    "NQ-02",
+    "NQ-04"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-13",
+   "cat": "VH",
+   "ten": "Thả giống",
+   "mo_ta": "Từ mua giống đến thả vào 6 ao và theo dõi sau thả.",
+   "khi_nao": "Đầu vụ nuôi",
+   "ai": "Kỹ thuật farm, Ban Quản lý chất lượng, Trưởng farm, Nhà cung cấp giống",
+   "buoc": [
+    {
+     "ten": "Mua giống theo công vụ mua sắm",
+     "ai": "Trưởng farm",
+     "vb": [
+      "KH-04",
+      "TC-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Chuẩn bị ao: đo thông số, kiểm tra nước, thiết bị",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Nhận giống: kiểm tra ngoại quan, kiểm dịch",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Đánh giá lô giống",
+     "ai": "Kỹ thuật farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Giống đạt yêu cầu?",
+      "co": "Nhận, phân bổ thả theo ao",
+      "khong": "Từ chối hoặc nhận có điều kiện, lập biên bản"
+     }
+    },
+    {
+     "ten": "Thả và lập biên bản (số lượng, mật độ, nhiệt độ, độ mặn)",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Lấy ý kiến kỹ thuật và theo dõi sau thả",
+     "ai": "Ban Quản lý chất lượng",
+     "vb": [
+      "VH-03",
+      "VH-01",
+      "VH-02"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "VH-03"
+   ],
+   "thuong_dung": [
+    "KH-04",
+    "TC-01",
+    "KH-01",
+    "VH-01",
+    "VH-02"
+   ],
+   "tham_chieu": [
+    "NQ-04",
+    "NQ-06"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-14",
+   "cat": "VH",
+   "ten": "Kiểm tra định kỳ và giao ban",
+   "mo_ta": "Kiểm tra mẫu hằng tuần, họp giao ban, báo cáo tháng.",
+   "khi_nao": "Hằng tuần và hằng tháng",
+   "ai": "Kỹ thuật farm, Trưởng farm, Phó farm",
+   "buoc": [
+    {
+     "ten": "Lấy mẫu 10–30 con mỗi ao, cân đo, quan sát lột xác",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-06"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Tổng hợp nhật ký ao, cho ăn, thuốc",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-01",
+      "VH-02",
+      "VH-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Họp giao ban Ban Quản lý Farm, giao việc",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "DA-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Báo cáo tiến độ và thu chi hằng tháng",
+     "ai": "Trưởng farm, Kế toán farm",
+     "vb": [
+      "DA-02",
+      "TC-04"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "VH-06",
+    "DA-01"
+   ],
+   "thuong_dung": [
+    "DA-02",
+    "TC-04"
+   ],
+   "tham_chieu": [
+    "NQ-06"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-15",
+   "cat": "VH",
+   "ten": "Xử lý dịch bệnh, hao hụt",
+   "mo_ta": "Phát hiện sớm, phân loại nguyên nhân, xử lý và ghi nhận trách nhiệm.",
+   "khi_nao": "Khi cua chết bất thường hoặc có dấu hiệu bệnh",
+   "ai": "Kỹ thuật farm, Ban Quản lý chất lượng, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Phát hiện, ghi nhật ký, báo Trưởng farm ngay",
+     "ai": "Công nhân, Kỹ thuật",
+     "vb": [
+      "VH-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Phân mức sự cố",
+     "ai": "Trưởng farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Mức mấy?",
+      "co": "Mức 2: xin tham vấn Ban Quản lý chất lượng; mức 3: báo cáo cấp trên và hai bên góp vốn",
+      "khong": "Mức 1: farm tự xử lý"
+     }
+    },
+    {
+     "ten": "Lập biên bản: triệu chứng, số chết, thông số, nguyên nhân sơ bộ",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-05"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Xử lý bằng thuốc, men vi sinh; xuất kho",
+     "ai": "Kỹ thuật farm",
+     "vb": [
+      "VH-04",
+      "KH-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Theo dõi kết quả; họp giao ban",
+     "ai": "Trưởng farm",
+     "vb": [
+      "DA-01",
+      "VH-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Nguyên nhân chủ quan: xem xét trách nhiệm và đền bù",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "NQ-07"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "VH-05"
+   ],
+   "thuong_dung": [
+    "VH-04",
+    "VH-01",
+    "KH-02",
+    "DA-01"
+   ],
+   "tham_chieu": [
+    "NQ-06",
+    "NQ-07"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-16",
+   "cat": "VH",
+   "ten": "Thu hoạch và bán sản phẩm",
+   "mo_ta": "Thu theo đợt, cân, thanh toán và đối soát cuối vụ.",
+   "khi_nao": "Cuối vụ nuôi",
+   "ai": "Kỹ thuật farm, Người mua, Kế toán farm, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Thống nhất kế hoạch thu và người mua",
+     "ai": "Trưởng farm, Ban Kinh doanh",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Thu và cân có ba bên chứng kiến",
+     "ai": "Kỹ thuật farm, Người mua, Người cân",
+     "vb": [
+      "VH-07"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Nhận tiền, lập phiếu thu",
+     "ai": "Thủ quỹ",
+     "vb": [
+      "TC-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Cập nhật báo cáo thu chi",
+     "ai": "Kế toán farm",
+     "vb": [
+      "TC-04"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Quyết toán và đối soát hai bên cuối vụ",
+     "ai": "Trưởng farm, Phó farm",
+     "vb": [
+      "TC-05"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "VH-07"
+   ],
+   "thuong_dung": [
+    "TC-02",
+    "TC-04",
+    "TC-05"
+   ],
+   "tham_chieu": [
+    "NQ-05"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-17",
+   "cat": "KH",
+   "ten": "Nhập, xuất kho và kiểm kê",
+   "mo_ta": "Quản lý hàng ra vào kho; kiểm kê hằng tháng.",
+   "khi_nao": "Mỗi lần nhập, xuất và cuối tháng",
+   "ai": "Thủ kho, Kỹ thuật farm, Kế toán farm, Phó farm",
+   "buoc": [
+    {
+     "ten": "Nhập: kiểm đếm, kiểm chất lượng, hạn dùng",
+     "ai": "Thủ kho",
+     "vb": [
+      "KH-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Xuất: có phiếu, duyệt liều lượng, ghi ao sử dụng",
+     "ai": "Thủ kho, Kỹ thuật",
+     "vb": [
+      "KH-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Ghi thẻ kho sau mỗi lần nhập, xuất",
+     "ai": "Thủ kho",
+     "vb": [
+      "KH-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm kê hằng tháng, đối chiếu sổ",
+     "ai": "Thủ kho, Kế toán, Phó farm",
+     "vb": [
+      "KH-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Có chênh lệch?",
+     "ai": "Thủ kho",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Tồn thực tế khác sổ?",
+      "co": "Giải trình bằng văn bản trong 02 ngày làm việc",
+      "khong": "Ký xác nhận kiểm kê"
+     }
+    }
+   ],
+   "bat_buoc": [
+    "KH-01",
+    "KH-02",
+    "KH-03"
+   ],
+   "thuong_dung": [],
+   "tham_chieu": [
+    "NQ-04"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-18",
+   "cat": "AN",
+   "ten": "Khách ra vào và tài sản mang ra",
+   "mo_ta": "Đăng ký khách, nhà cung cấp, xe; kiểm soát tài sản ra khỏi farm.",
+   "khi_nao": "Mỗi lượt khách, mỗi lần mang hàng ra",
+   "ai": "Bảo vệ, Thủ kho, Trưởng farm",
+   "buoc": [
+    {
+     "ten": "Khách đăng ký vào sổ",
+     "ai": "Bảo vệ",
+     "vb": [
+      "AN-01"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Báo người cần gặp, đón vào",
+     "ai": "Bảo vệ",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Mang tài sản, sản phẩm ra: kiểm phiếu xuất kho",
+     "ai": "Bảo vệ, Thủ kho",
+     "vb": [
+      "KH-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Kiểm tra sổ khách cuối tuần",
+     "ai": "Kế toán, thủ kho, Trưởng farm",
+     "vb": [
+      "AN-01"
+     ],
+     "ghi": ""
+    }
+   ],
+   "bat_buoc": [
+    "AN-01"
+   ],
+   "thuong_dung": [
+    "KH-02"
+   ],
+   "tham_chieu": [
+    "NQ-03",
+    "NQ-01"
+   ],
+   "luu_y": []
+  },
+  {
+   "id": "CV-19",
+   "cat": "AN",
+   "ten": "Sự cố an ninh, tai nạn, cháy",
+   "mo_ta": "Xử lý ngay, giữ hiện trường, lập biên bản trong ca.",
+   "khi_nao": "Khi mất cắp, phá hoại, tai nạn, cháy",
+   "ai": "Người phát hiện, Trưởng farm, Phó farm",
+   "buoc": [
+    {
+     "ten": "Sơ cứu, cắt điện, báo cứu hỏa 114 hoặc cấp cứu 115",
+     "ai": "Người phát hiện",
+     "vb": [],
+     "ghi": "An toàn người trước tài sản"
+    },
+    {
+     "ten": "Báo Trưởng farm và Phó farm ngay",
+     "ai": "Người phát hiện",
+     "vb": [],
+     "ghi": ""
+    },
+    {
+     "ten": "Giữ nguyên hiện trường, lập biên bản trong ca",
+     "ai": "Trưởng ca, Bảo vệ",
+     "vb": [
+      "AN-02"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Có dấu hiệu hình sự hoặc thiệt hại lớn?",
+     "ai": "Trưởng farm",
+     "vb": [],
+     "ghi": "",
+     "qd": {
+      "hoi": "Cần báo cơ quan chức năng?",
+      "co": "Báo công an địa phương, ghi số biên bản",
+      "khong": "Xử lý nội bộ"
+     }
+    },
+    {
+     "ten": "Báo Ban Quản lý chất lượng; rà soát biện pháp phòng ngừa",
+     "ai": "Trưởng farm",
+     "vb": [
+      "NQ-02",
+      "NQ-03"
+     ],
+     "ghi": ""
+    },
+    {
+     "ten": "Có vi phạm nội quy?",
+     "ai": "Trưởng farm",
+     "vb": [
+      "NS-05"
+     ],
+     "ghi": "Xử lý theo công vụ CV-11"
+    }
+   ],
+   "bat_buoc": [
+    "AN-02"
+   ],
+   "thuong_dung": [
+    "NS-05"
+   ],
+   "tham_chieu": [
+    "NQ-02",
+    "NQ-03"
+   ],
+   "luu_y": []
+  }
+ ]
+}
