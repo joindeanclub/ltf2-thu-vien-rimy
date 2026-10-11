@@ -1277,5 +1277,189 @@
    ],
    "luu_y": []
   }
+ ],
+ "tra_nhanh": [
+  {
+   "vu_viec": "Cua chết bất thường, bỏ ăn, thông số nước lệch",
+   "muc": "2",
+   "cong_vu": [
+    "CV-15"
+   ],
+   "van_ban": [
+    "VH-05",
+    "VH-04",
+    "VH-01",
+    "KH-02"
+   ]
+  },
+  {
+   "vu_viec": "Mất điện, hỏng bơm sục khí, bơm nước",
+   "muc": "1–2",
+   "cong_vu": [
+    "CV-12",
+    "CV-07"
+   ],
+   "van_ban": [
+    "VH-01",
+    "KH-05",
+    "TC-01"
+   ]
+  },
+  {
+   "vu_viec": "Giống nhận về không đạt",
+   "muc": "2",
+   "cong_vu": [
+    "CV-13"
+   ],
+   "van_ban": [
+    "VH-03",
+    "KH-01"
+   ]
+  },
+  {
+   "vu_viec": "Hàng nhập sai quy cách, hư hỏng, hết hạn",
+   "muc": "1",
+   "cong_vu": [
+    "CV-17"
+   ],
+   "van_ban": [
+    "KH-01",
+    "KH-04"
+   ]
+  },
+  {
+   "vu_viec": "Chênh lệch kiểm kê kho",
+   "muc": "1",
+   "cong_vu": [
+    "CV-17"
+   ],
+   "van_ban": [
+    "KH-03"
+   ]
+  },
+  {
+   "vu_viec": "Cần mua gấp vật tư, thuốc, thiết bị",
+   "muc": "1",
+   "cong_vu": [
+    "CV-02",
+    "CV-01"
+   ],
+   "van_ban": [
+    "KH-04",
+    "TC-01",
+    "TC-02"
+   ]
+  },
+  {
+   "vu_viec": "Khoản chi vượt hạn mức hạng mục",
+   "muc": "2",
+   "cong_vu": [
+    "CV-01"
+   ],
+   "van_ban": [
+    "TC-01",
+    "TC-04"
+   ]
+  },
+  {
+   "vu_viec": "Hai bên góp vốn chậm hoặc thiếu",
+   "muc": "2–3",
+   "cong_vu": [
+    "CV-03"
+   ],
+   "van_ban": [
+    "TC-05",
+    "TC-04"
+   ]
+  },
+  {
+   "vu_viec": "Hạng mục hạ tầng làm chưa đạt",
+   "muc": "1",
+   "cong_vu": [
+    "CV-06"
+   ],
+   "van_ban": [
+    "DA-04"
+   ]
+  },
+  {
+   "vu_viec": "Người làm vi phạm nội quy",
+   "muc": "1–2",
+   "cong_vu": [
+    "CV-11"
+   ],
+   "van_ban": [
+    "NS-05",
+    "NQ-07"
+   ]
+  },
+  {
+   "vu_viec": "Có người nghỉ đột xuất, cần thay ca",
+   "muc": "1",
+   "cong_vu": [
+    "CV-10"
+   ],
+   "van_ban": [
+    "NS-04",
+    "NS-06"
+   ]
+  },
+  {
+   "vu_viec": "Mất cắp, người lạ xâm nhập, phá hoại",
+   "muc": "2–3",
+   "cong_vu": [
+    "CV-19"
+   ],
+   "van_ban": [
+    "AN-02",
+    "AN-01"
+   ]
+  },
+  {
+   "vu_viec": "Tai nạn lao động, cháy, chập điện",
+   "muc": "3",
+   "cong_vu": [
+    "CV-19"
+   ],
+   "van_ban": [
+    "AN-02",
+    "NQ-02"
+   ]
+  },
+  {
+   "vu_viec": "Khách, nhà cung cấp vào farm",
+   "muc": "1",
+   "cong_vu": [
+    "CV-18"
+   ],
+   "van_ban": [
+    "AN-01",
+    "NQ-03"
+   ]
+  },
+  {
+   "vu_viec": "Thu hoạch, người mua, thanh toán",
+   "muc": "1",
+   "cong_vu": [
+    "CV-16"
+   ],
+   "van_ban": [
+    "VH-07",
+    "TC-02",
+    "TC-04"
+   ]
+  },
+  {
+   "vu_viec": "Tranh chấp với nhà cung cấp, người mua hoặc đối tác",
+   "muc": "3",
+   "cong_vu": [
+    "CV-04",
+    "CV-19"
+   ],
+   "van_ban": [
+    "TC-05",
+    "DA-01"
+   ]
+  }
  ]
 }

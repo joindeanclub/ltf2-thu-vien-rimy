@@ -1,5 +1,5 @@
-{
-  "name": "Farm LTF2 – Việc và văn bản",
+﻿{
+  "name": "Farm LTF2 – Thư viện văn bản và công vụ",
   "short_name": "Farm LTF2",
   "lang": "vi",
   "start_url": "./",
@@ -12,3 +12,4 @@
     {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"}
   ]
 }
+

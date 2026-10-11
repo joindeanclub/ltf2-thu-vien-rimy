@@ -175,3 +175,20 @@ body.noscroll{overflow:hidden}
   background:#111;color:#fff;padding:10px 16px;border-radius:12px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30;
   max-width:88vw;text-align:center;font-size:14px}
 .toast.show{opacity:.95}
+
+/* v3: 3 tab, tra nhanh vụ việc */
+.tabs{grid-template-columns:repeat(3,1fr)}
+.tabs button{font-size:12.5px}
+.tra{padding:0;overflow:hidden}
+.tra .fold{padding:13px 14px}
+.tra-list{border-top:1px solid var(--line)}
+.tra-row{padding:10px 14px;border-top:1px solid var(--line)}
+.tra-row:first-child{border-top:0}
+.tra-t{display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+.tra-t strong{font-size:14.5px;line-height:1.3}
+.tag.lvl{background:#fff0d6;color:#7a4a00;white-space:nowrap}
+.tag.cvtag{background:var(--green);color:#fff;font-weight:700;cursor:pointer}
+.mut{font-size:12.5px;color:var(--mute);align-self:center}
+ul.plain{margin:0;padding-left:18px}
+ul.plain li{margin:4px 0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag.lvl{background:#4a3818;color:#ffe0a8}}
